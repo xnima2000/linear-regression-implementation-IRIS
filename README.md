@@ -6,7 +6,7 @@ Welcome to the Linear Regression Implementation repository! This project demonst
 
 Suppose we want to fit a linear model on the data that takes the features `f1`, `f2`, and `f4` and predicts the feature `f3` (or `t`). This linear model is defined as follows:
 
-f3 = t = w0 + w1*f1 + w2*f2 + w3*f4
+f3 = t = w0 + w1@f1 + w2@f2 + w3@f4
 
 ### 🛠️ Training Phase
 To form this linear model, we need to estimate the parameters `w0`, `w1`, `w2`, and `w3` using the data.
@@ -32,7 +32,7 @@ To test the model, we put the features `f1`, `f2`, and `f4` of the test data in 
 
 The error of this prediction with the MSE criterion is equal to:
 
-\[ \frac{1}{2} \times (t - f3)^2 \]
+1/2 (t - f3)^2
 
 We do the same for the other test data and add or average the prediction errors.
 
