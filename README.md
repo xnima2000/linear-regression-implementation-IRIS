@@ -6,7 +6,7 @@ Welcome to the Linear Regression Implementation repository! This project demonst
 
 Suppose we want to fit a linear model on the data that takes the features `f1`, `f2`, and `f4` and predicts the feature `f3` (or `t`). This linear model is defined as follows:
 
-\[ f3 = t = w0 + w1 \cdot f1 + w2 \cdot f2 + w3 \cdot f4 \]
+f3 = t = w0 + w1*f1 + w2*f2 + w3*f4
 
 ### 🛠️ Training Phase
 To form this linear model, we need to estimate the parameters `w0`, `w1`, `w2`, and `w3` using the data.
@@ -23,7 +23,7 @@ The Iris dataset consists of three classes (categories). It is better to form a 
 
 To calculate the parameters `w = [w0, w1, w2, w3]^T`, according to the linear regression relations, we use the following formula:
 
-\[ w = (X^T X)^{-1} X^T t \]
+w = (X^T @ X)^-1 @ X^T @ t
 
 By performing these calculations, `w` parameters are obtained.
 
